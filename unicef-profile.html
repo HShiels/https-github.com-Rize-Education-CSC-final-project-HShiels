@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpHub - UNICEF Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="CharitiesListPage.html">Charities List</a></li>
+            <li><a href="unicef-profile.html" class="active">UNICEF Profile</a></li>
+        </ul>
+    </nav>
+
+    <!-- Back to Charities List Link -->
+    <section>
+        <a href="CharitiesListPage.html" class="back-to-list">Back to Charities List</a>
+    </section>
+
+    <!-- Main Content -->
+    <header>
+        <h1>UNICEF</h1>
+        <img src="https://i.postimg.cc/qRKWxdRv/temp-Imagety-LWtl.avif" alt="UNICEF Logo" width="200">
+    </header>
+
+    <!-- About This Charity Section -->
+    <section class="about-charity">
+        <div class="left-box">
+            <img src="https://i.postimg.cc/Qd4LXbwh/temp-Image-Xi7m-Qg.avif" alt="UNICEF Photo" class="charity-photo">
+        </div>
+        <div class="right-box">
+            <h2>About UNICEF</h2>
+            <p>UNICEF works to ensure every child has access to education, healthcare, and protection. Their focus is on reaching the most vulnerable children worldwide to improve their health, education, and overall quality of life.</p>
+        </div>
+    </section>
+
+    <!-- Contact Information Section -->
+    <section>
+        <h2>Contact Information</h2>
+        <p>Email: <a href="mailto:info@unicef.org">info@unicef.org</a></p>
+        <p>Phone: 1-800-FOR-UNICEF (1-800-367-8643)</p>
+        <p>Website: <a href="https://www.unicef.org" target="_blank">www.unicef.org</a></p>
+    </section>
+
+    <!-- Get Involved Section -->
+    <section>
+        <h2>Get Involved</h2>
+        <button id="volunteerBtn">Volunteer Now</button>
+    </section>
+
+    <!-- Volunteer Signup Section with Shadowed Outline Box -->
+    <section class="volunteer-section">
+        <h2>Volunteer Signup</h2>
+        <p>If you're interested in making a difference, sign up to volunteer with us today!</p>
+    </section>
+
+    <!-- Hidden Volunteer Form Container -->
+    <div id="volunteerFormContainer" style="display:none;">
+        <h2>Volunteer Signup</h2>
+        <form id="volunteerForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <button type="submit">Submit</button>
+        </form>
+        <!-- Exit Button to close the form -->
+        <button id="exitBtn">Exit</button>
+    </div>
+
+    <!-- Charity Info with Hoverable Details -->
+    <div class="charity-info">
+        <h3>Charity Information</h3>
+        <p>Hover here to see more details about UNICEF.</p>
+    </div>
+
+    <div id="extraDetails" style="display:none;">
+        <p>UNICEF is committed to providing children around the globe with the support they need to survive and thrive. Their work spans areas such as nutrition, education, and protection in some of the most challenging environments.</p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 HelpHub. All rights reserved.</p>
+        <p><a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-of-service.html">Terms of Service</a></p>
+    </footer>
+
+<script src="Charity_Profile.js"></script>
+</body>
+</html>

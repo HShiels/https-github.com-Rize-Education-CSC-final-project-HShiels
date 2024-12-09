@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpHub - WWF Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="CharitiesListPage.html">Charities List</a></li>
+            <li><a href="wwf-profile.html" class="active">WWF Profile</a></li>
+        </ul>
+    </nav>
+
+    <!-- Back to Charities List Link -->
+    <section>
+        <a href="CharitiesListPage.html" class="back-to-list">Back to Charities List</a>
+    </section>
+
+    <!-- Main Content -->
+    <header>
+        <h1>World Wildlife Fund (WWF)</h1>
+        <img src="https://i.postimg.cc/Bb81tMQD/WWF-jpg.avif" alt="WWF Logo" width="200">
+    </header>
+
+    <!-- About This Charity Section -->
+    <section class="about-charity">
+        <div class="left-box">
+            <img src="https://i.postimg.cc/RhN6DGkh/temp-Image3f9-Wk-G.avif" alt="WWF Photo" class="charity-photo">
+        </div>
+        <div class="right-box">
+            <h2>About WWF</h2>
+            <p>The World Wildlife Fund (WWF) is dedicated to protecting the world's wildlife and conserving natural resources. Their mission focuses on the preservation of biodiversity and the sustainability of the planet’s ecosystems, particularly those that are under threat from human activity.</p>
+        </div>
+    </section>
+
+    <!-- Contact Information Section -->
+    <section>
+        <h2>Contact Information</h2>
+        <p>Email: <a href="mailto:info@wwf.org">info@wwf.org</a></p>
+        <p>Phone: 1-800-225-1041</p>
+        <p>Website: <a href="https://www.worldwildlife.org" target="_blank">www.worldwildlife.org</a></p>
+    </section>
+
+    <!-- Get Involved Section -->
+    <section>
+        <h2>Get Involved</h2>
+        <button id="volunteerBtn">Volunteer Now</button>
+    </section>
+
+    <!-- Volunteer Signup Section with Shadowed Outline Box -->
+    <section class="volunteer-section">
+        <h2>Volunteer Signup</h2>
+        <p>If you're interested in making a difference, sign up to volunteer with us today!</p>
+    </section>
+
+    <!-- Hidden Volunteer Form Container -->
+    <div id="volunteerFormContainer" style="display:none;">
+        <h2>Volunteer Signup</h2>
+        <form id="volunteerForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <button type="submit">Submit</button>
+        </form>
+        <!-- Exit Button to close the form -->
+        <button id="exitBtn">Exit</button>
+    </div>
+
+    <!-- Charity Info with Hoverable Details -->
+    <div class="charity-info">
+        <h3>Charity Information</h3>
+        <p>Hover here to see more details about WWF.</p>
+    </div>
+
+    <div id="extraDetails" style="display:none;">
+        <p>The WWF works globally to combat deforestation, climate change, and threats to endangered species. They collaborate with governments, corporations, and communities to promote sustainability.</p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 HelpHub. All rights reserved.</p>
+        <p><a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-of-service.html">Terms of Service</a></p>
+    </footer>
+
+<script src="Charity_Profile.js"></script>
+</body>
+</html>

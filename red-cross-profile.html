@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpHub - Red Cross Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="CharitiesListPage.html">Charities List</a></li>
+            <li><a href="red-cross-profile.html" class="active">Red Cross Profile</a></li>
+        </ul>
+    </nav>
+    
+   <!-- Back to Charities List Link -->
+   <section>
+       <a href="CharitiesListPage.html" class="back-to-list">Back to Charities List</a>
+   </section>
+
+   <!-- Main Content -->
+   <header>
+       <h1>Red Cross</h1>
+       <img src="https://i.postimg.cc/zBDRnqpn/temp-Imaged-SPEBv.avif" alt="Red Cross Logo" width="200">
+   </header>
+
+   <!-- About This Charity Section -->
+   <section class="about-charity">
+       <div class="left-box">
+           <img src="https://i.postimg.cc/JnTHxSdS/temp-Image-IF4-GA0.avif" alt="Red Cross Photo" class="charity-photo">
+       </div>
+       <div class="right-box">
+           <h2>About The Red Cross</h2>
+           <p>The Red Cross provides emergency assistance, disaster relief, and education in communities around the world. They help people prepare for and respond to emergencies, including natural disasters, conflicts, and health crises. Their work is vital in ensuring safety and humanitarian aid when disaster strikes.</p>
+       </div>
+   </section>
+
+   <!-- Contact Information Section -->
+   <section>
+       <h2>Contact Information</h2>
+       <p>Email: <a href="mailto:contact@redcross.org">contact@redcross.org</a></p>
+       <p>Phone: 1-800-RED-CROSS (1-800-733-2767)</p>
+       <p>Website: <a href="https://www.redcross.org" target="_blank">www.redcross.org</a></p>
+   </section>
+
+   <!-- Get Involved Section -->
+   <section>
+       <h2>Get Involved</h2>
+       <button id="volunteerBtn">Volunteer Now</button>
+   </section>
+
+   <!-- Volunteer Signup Section with Shadowed Outline Box -->
+   <section class="volunteer-section">
+       <h2>Volunteer Signup</h2>
+       <p>If you're interested in making a difference, sign up to volunteer with us today!</p>
+   </section>
+
+   <!-- Hidden Volunteer Form Container -->
+   <div id="volunteerFormContainer" style="display:none;">
+       <h2>Volunteer Signup</h2>
+       <form id="volunteerForm">
+           <label for="name">Name:</label>
+           <input type="text" id="name" name="name" required>
+
+           <label for="email">Email:</label>
+           <input type="email" id="email" name="email" required>
+
+           <label for="phone">Phone Number:</label>
+           <input type="tel" id="phone" name="phone" required>
+
+           <button type="submit">Submit</button>
+       </form>
+       <!-- Exit Button to close the form -->
+       <button id="exitBtn">Exit</button>
+   </div>
+
+   <!-- Charity Info with Hoverable Details -->
+   <div class="charity-info">
+       <h3>Charity Information</h3>
+       <p>Hover here to see more details about the Red Cross.</p>
+   </div>
+
+   <div id="extraDetails" style="display:none;">
+       <p>The Red Cross is one of the largest humanitarian organizations worldwide, providing life-saving services and promoting social welfare. They operate globally, supporting people affected by disasters, armed conflicts, and public health emergencies.</p>
+   </div>
+
+   <!-- Footer -->
+   <footer>
+       <p>&copy; 2024 HelpHub. All rights reserved.</p>
+       <p><a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-of-service.html">Terms of Service</a></p>
+   </footer>
+
+<script src="Charity_Profile.js"></script> 
+</body>
+</html>
